@@ -1,1 +1,17 @@
 <H1>SOY EL HOME</H1>
+
+
+
+<!-- Mostramos los datos del cliente en el componente receptor -->
+<h1>Datos del Cliente</h1>
+<p>Nombre: {{ datosCliente?.nombre }}</p>
+<p>Apellido: {{ datosCliente?.apellido }}</p>
+<p>Edad: {{ datosCliente?.edad }}</p>
+
+<!-- home.component.html -->
+<h1>Datos del Cliente</h1>
+<div *ngIf="datosCliente">
+  <p>Nombre: {{ datosCliente.nombre }}</p>
+  <p>Apellido: {{ datosCliente.apellido }}</p>
+  <p>Edad: {{ datosCliente.edad }}</p>
+</div>
